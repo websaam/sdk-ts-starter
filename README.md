@@ -1,5 +1,11 @@
 # A boilerplate to start create a Typescript SDK 
 
+# Getting started
+
+```
+npx @websaam/sdk-ts-starter my-ts-sdk
+```
+
 # Installation
 
 1. Run `yarn`
