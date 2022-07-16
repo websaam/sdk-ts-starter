@@ -6,7 +6,7 @@
 
 2. Change your configs in `esbuild-config.js`
 
-3. Change your package name in `package.json`, rename `sdk-ts-starter` to anything you want
+3. Change your package name in `package.json`, rename `@websaam/sdk-ts-starter` to anything you want
 
 ## HTML
 
@@ -32,11 +32,11 @@ yarn getReact
 // 2. Build the SDK for both client/node, and publish locally using yalc
 yarn build
 
-// 3. Go to the React app and link the local published sdk (change the name of the package name `sdk-ts-starter` to something you desired)
+// 3. Go to the React app and link the local published sdk (change the name of the package name `@websaam/sdk-ts-starter` to something you desired)
 yarn linkReact
 
 // 4. In the App.js
-import * as ExampleSDK from 'sdk-ts-starter';
+import * as ExampleSDK from '@websaam/sdk-ts-starter';
 ExampleSDK.hello();
 
 ```

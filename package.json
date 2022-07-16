@@ -23,7 +23,7 @@
     "getReact": "cd tests && npx create-react-app react-app",
     "runReact": "cd ./tests/react-app && yarn start",
     "removeReact": "rm -rf ./tests/react-app",
-    "linkReact": "cd ./tests/react-app && yalc add sdk-ts-starter"
+    "linkReact": "cd ./tests/react-app && yalc add @websaam/sdk-ts-starter"
     
   },
   "devDependencies": {
