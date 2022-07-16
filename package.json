@@ -1,32 +1,25 @@
 {
   "name": "@websaam/sdk-ts-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/node/index.js",
   "license": "MIT",
   "bin": "./bin/cli.js",
-  "scripts":{
+  "scripts": {
     "clear": "rm -rf ./build/*",
     "doc": "typedoc --entryPointStrategy expand ./src",
-
     "watchSrc": "yarn tsc --watch",
-    
     "watchTsSrcForWeb": "node esbuild-web-watch.js",
     "buildWeb": "node esbuild-web.js",
     "devHtml": "concurrently 'yarn watchSrc' 'yarn watchTsSrcForWeb' 'node live-server.js'",
-
     "watchTsSrcForNode": "node esbuild-node-watch.js",
     "buildNode": "node esbuild-node.js",
     "devReact": "concurrently 'yarn watchSrc' 'yarn watchTsSrcForNode' 'yarn runReact'",
-
     "build": "concurrently 'yarn buildWeb' 'yarn buildNode' && yalc publish && yalc push",
-
     "getReact": "cd tests && npx create-react-app react-app",
     "runReact": "cd ./tests/react-app && yarn start",
     "removeReact": "rm -rf ./tests/react-app",
     "linkReact": "cd ./tests/react-app && yalc add @websaam/sdk-ts-starter",
-
     "publish": "npm publish --access=public"
-    
   },
   "devDependencies": {
     "concurrently": "^7.2.2",
