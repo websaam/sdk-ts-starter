@@ -1,6 +1,6 @@
 {
   "name": "@websaam/sdk-ts-starter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "build/node/index.js",
   "license": "MIT",
   "bin": "./bin/cli.js",
