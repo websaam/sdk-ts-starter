@@ -21,8 +21,10 @@ npx @websaam/sdk-ts-starter my-ts-sdk
 Open `tests/html/html-test.html` to edit
 
 ```html
-<script src="./index.js">
-    ExampleSDK.foo()
+<script src="/build/web/index.js"></script>
+<script>
+    console.log("ExampleSDK:", ExampleSDK);
+    ExampleSDK.foo();
 </script>
 ```
 
