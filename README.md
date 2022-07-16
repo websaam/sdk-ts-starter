@@ -1,6 +1,18 @@
 # A boilerplate to start create a Typescript SDK 
 
+# Installation
+
+1. Run `yarn`
+
+2. Change your configs in `esbuild-config.js`
+
+3. Change your package name in `package.json`, rename `sdk-ts-starter` to anything you want
+
 ## HTML
+
+> `devHtml`: Listens to Typescript file changes from `src`, and output to `src_build_from_ts`, which is also being listend and built to `./build/web/index.js`. Finally, run a live server on `localhost:3000` 
+
+Open `tests/html/html-test.html` to edit
 
 ```html
 <script src="./index.js">
@@ -9,6 +21,8 @@
 ```
 
 ## React
+
+> `devReact`: Listens to Typescript file changes from `src`, and output to `src_build_from_ts`, which is also being listend and built to `./build/node/index.js`. Finally, run React app on `localhost:3000` 
 
 ```js
 
@@ -26,9 +40,3 @@ import * as ExampleSDK from 'sdk-ts-starter';
 ExampleSDK.hello();
 
 ```
-
-# Yarn commands
-
-> `devHtml`: Listens to Typescript file changes from `src`, and output to `src_build_from_ts`, which is also being listend and built to `./build/web/index.js`. Finally, run a live server on `localhost:3000` 
-
-> `devReact`: Listens to Typescript file changes from `src`, and output to `src_build_from_ts`, which is also being listend and built to `./build/node/index.js`. Finally, run React app on `localhost:3000` 
