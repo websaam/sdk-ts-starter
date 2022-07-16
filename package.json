@@ -1,8 +1,9 @@
 {
-  "name": "sdk-ts-starter",
+  "name": "@websaam/sdk-ts-starter",
   "version": "1.0.0",
   "main": "build/node/index.js",
   "license": "MIT",
+  "bin": "./bin/cli.js",
   "scripts":{
     "clear": "rm -rf ./build/*",
     "doc": "typedoc --entryPointStrategy expand ./src",
