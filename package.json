@@ -1,6 +1,6 @@
 {
   "name": "@websaam/sdk-ts-starter",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "build/node/index.js",
   "license": "MIT",
   "bin": "./bin/cli.js",
@@ -10,7 +10,7 @@
     "watchSrc": "yarn tsc --watch",
     "watchTsSrcForWeb": "node esbuild-web-watch.js",
     "buildWeb": "node esbuild-web.js",
-    "devHtml": "concurrently 'yarn buildWeb' 'yarn watchSrc' 'yarn watchTsSrcForWeb' 'node live-server.js'",
+    "devHtml": "yarn tsc && yarn buildWeb && concurrently 'yarn watchSrc' 'yarn watchTsSrcForWeb' 'node live-server.js'",
     "watchTsSrcForNode": "node esbuild-node-watch.js",
     "buildNode": "node esbuild-node.js",
     "devReact": "concurrently 'yarn watchSrc' 'yarn watchTsSrcForNode' 'yarn runReact'",
